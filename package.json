@@ -1,0 +1,26 @@
+{
+  "name": "subsup",
+  "version": "1.0.0",
+  "description": "Unicode subscripts and superscripts mapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msn0/subsup.git"
+  },
+  "keywords": [
+    "sub",
+    "sup",
+    "superscript",
+    "subscript",
+    "unicode"
+  ],
+  "author": "Michał Jezierski <ambinanitelo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msn0/subsup/issues"
+  },
+  "homepage": "https://github.com/msn0/subsup#readme"
+}
