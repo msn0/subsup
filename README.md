@@ -4,13 +4,13 @@ Unicode subscripts and superscripts mapper
 ## examples
 
 ```js
-'W(x) = x' + sup(7);
-// W(x) = x⁷
+'a' + sup(2) + ' + b' + sup(2) + ' = c' + sup(2);
+// a² + b² = c²
 ```
 
 ```js
-`W(x, y) = x${sup(65)} - y${sup('6n+9')}`
-// W(x, y) = x⁶⁵ - y⁶ⁿ⁺⁹
+`W(x, y) = -3x${sup('2')} + 2xy${sup(2)} + y${sub(0)}`
+// W(x, y) = -3x² + 2xy² + y₀
 ```
 
 ```js
