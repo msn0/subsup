@@ -53,5 +53,5 @@ module.exports.sup = function (input) {
 
 module.exports.sub = function (input) {
     input = (input + '').split('');
-    return input.map(i => map.sup[i]).join('');
+    return input.map(i => map.sub[i]).join('');
 };
