@@ -1,7 +1,13 @@
 # subsup
 Unicode subscripts and superscripts mapper
 
-## examples
+## Installation
+
+```sh
+$ npm i subsub
+```
+
+## Examples
 
 ```js
 'a' + sup(2) + ' + b' + sup(2) + ' = c' + sup(2);
@@ -17,3 +23,7 @@ Unicode subscripts and superscripts mapper
 `W(x) = -3x${sup(3)} - x${sup(2)} + 2x-7`
 // W(x) = -3x³ - x² + 2x - 7
 ```
+
+## License
+
+MIT
