@@ -4,7 +4,7 @@ Unicode subscripts and superscripts mapper
 ## Installation
 
 ```sh
-$ npm i subsub
+$ npm i subsup
 ```
 
 ## Examples
