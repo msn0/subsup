@@ -39,7 +39,19 @@ const map = {
     }
 };
 
+function parse(input) {
+    return (input + '').split('');
+}
+
+function toSup(input) {
+    return map.sup[input];
+}
+
 module.exports.sup = function (input) {
+    return parse(input).map(toSup).join('');
+};
+
+module.exports.sub = function (input) {
     input = (input + '').split('');
     return input.map(i => map.sup[i]).join('');
 };
