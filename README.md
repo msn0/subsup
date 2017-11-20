@@ -1,4 +1,4 @@
-# subsup
+# subsup [![Build Status](https://travis-ci.org/msn0/subsup.svg?branch=master)](http://travis-ci.org/msn0/subsup)
 Unicode subscripts and superscripts mapper
 
 ## Installation
