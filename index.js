@@ -16,8 +16,50 @@ const superscripts = {
     '=': '⁼',
     '(': '⁽',
     ')': '⁾',
+    'a': 'ᵃ',
+    'b': 'ᵇ',
+    'c': 'ᶜ',
+    'd': 'ᵈ',
+    'e': 'ᵉ',
+    'f': 'ᶠ',
+    'g': 'ᵍ',
+    'h': 'ʰ',
+    'i': 'ⁱ',
+    'j': 'ʲ',
+    'k': 'ᵏ',
+    'l': 'ˡ',
+    'm': 'ᵐ',
     'n': 'ⁿ',
-    'i': 'ⁱ'
+    'o': 'ᵒ',
+    'p': 'ᵖ',
+    'r': 'ʳ',
+    's': 'ˢ',
+    't': 'ᵗ',
+    'u': 'ᵘ',
+    'v': 'ᵛ',
+    'w': 'ʷ',
+    'x': 'ˣ',
+    'y': 'ʸ',
+    'z': 'ᶻ',
+    'A': 'ᴬ',
+    'B': 'ᴮ',
+    'D': 'ᴰ',
+    'E': 'ᴱ',
+    'G': 'ᴳ',
+    'H': 'ᴴ',
+    'I': 'ᴵ',
+    'J': 'ᴶ',
+    'K': 'ᴷ',
+    'L': 'ᴸ',
+    'M': 'ᴹ',
+    'N': 'ᴺ',
+    'O': 'ᴼ',
+    'P': 'ᴾ',
+    'R': 'ᴿ',
+    'T': 'ᵀ',
+    'U': 'ᵁ',
+    'V': 'ⱽ',
+    'W': 'ᵂ'
 };
 
 const subscripts = {
@@ -35,7 +77,24 @@ const subscripts = {
     '-': '₋',
     '=': '₌',
     '(': '₍',
-    ')': '₎'
+    ')': '₎',
+    'a': 'ₐ',
+    'e': 'ₑ',
+    'h': 'ₕ',
+    'i': 'ᵢ',
+    'j': 'ⱼ',
+    'k': 'ₖ',
+    'l': 'ₗ',
+    'm': 'ₘ',
+    'n': 'ₙ',
+    'o': 'ₒ',
+    'p': 'ₚ',
+    'r': 'ᵣ',
+    's': 'ₛ',
+    't': 'ₜ',
+    'u': 'ᵤ',
+    'v': 'ᵥ',
+    'x': 'ₓ'
 };
 
 function parse(input) {
@@ -52,6 +111,10 @@ module.exports.sup = function (input) {
     return parse(input).map(to(superscripts)).join('');
 };
 
+module.exports.supChars = Object.keys(superscripts).join('');
+
 module.exports.sub = function (input) {
     return parse(input).map(to(subscripts)).join('');
 };
+
+module.exports.subChars = Object.keys(subscripts).join('');
